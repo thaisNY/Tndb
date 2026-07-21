@@ -1,16 +1,43 @@
-# React + Vite
+# 🎬 TMDB - Plataforma de Filmes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web interativa para exploração de catálogo de filmes, alimentada pela API pública do **The Movie Database (TMDB)**. O projeto conta com autenticação de usuário, listagem dinâmica e navegação responsiva.
 
-Currently, two official plugins are available:
+🔗 **Link do Deploy:** [TMDB na Vercel](https://tndb.vercel.app/) *(ou substitua pela URL gerada pela Vercel)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React.js** - Biblioteca principal para construção da interface
+* **Vite** - Bundler de alta performance para desenvolvimento frontend
+* **SASS / SCSS** - Estilização moderna e modularizada
+* **Axios** - Cliente HTTP para consumo da API do TMDB
+* **React Router DOM** - Gerenciamento de rotas e navegação da SPA
+* **Vercel** - Deploy e hospedagem contínua
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Funcionalidades
+
+- [x] **Autenticação:** Páginas de Login e Cadastro de usuário.
+- [x] **Consumo de API Externa:** Listagem de filmes atualizados via TMDB API.
+- [x] **Interface Responsiva:** Adaptada para diferentes tamanhos de tela.
+- [x] **Centralização de Requisições:** Instância global do Axios configurada via variáveis de ambiente.
+
+---
+
+## 📦 Como executar o projeto localmente
+
+### Pré-requisitos
+* Node.js instalado (versão 18 ou superior recomendada)
+* Gerenciador de pacotes `npm` ou `yarn`
+
+### Passo a passo
+
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/thaisNY/Tndb.git](https://github.com/thaisNY/Tndb.git)
+   cd Tndb
+   npm install
+   VITE_TMDB_API_KEY=sua_chave_aqui
+   npm run dev
